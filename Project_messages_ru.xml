@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="ru_project_title"><![CDATA[New Project]]></data>
+
+
+  <data name="ru_panogroup11_title"><![CDATA[Ректорат: 1-й этаж]]></data>
+
+  <data name="ru_pano14516_title"><![CDATA[0.3]]></data>
+  <data name="ru_pano10_title"><![CDATA[1 этаж]]></data>
+
+  <data name="ru_panogroup84_title"><![CDATA[Ректорат: 2-й этаж]]></data>
+
+  <data name="ru_pano79_title"><![CDATA[2.35]]></data>
+  <data name="ru_pano80_title"><![CDATA[2.36]]></data>
+
+  <data name="ru_panogroup56_title"><![CDATA[Учебный корпус №1: 1-й этаж]]></data>
+
+  <data name="ru_pano40_title"><![CDATA[Второй блок]]></data>
+  <data name="ru_pano37_title"><![CDATA[1.10]]></data>
+  <data name="ru_pano38_title"><![CDATA[1.11]]></data>
+  <data name="ru_pano41_title"><![CDATA[1.14]]></data>
+  <data name="ru_pano44_title"><![CDATA[1.17]]></data>
+  <data name="ru_pano45_title"><![CDATA[1.18]]></data>
+  <data name="ru_pano42_title"><![CDATA[1.15]]></data>
+  <data name="ru_pano46_title"><![CDATA[Первый блок]]></data>
+  <data name="ru_pano39_title"><![CDATA[1.12]]></data>
+  <data name="ru_pano43_title"><![CDATA[1.16]]></data>
+  <data name="ru_pano14514_title"><![CDATA[0.1]]></data>
+  <data name="ru_pano14515_title"><![CDATA[0.2]]></data>
+
+  <data name="ru_panogroup933_title"><![CDATA[Учебный корпус №1: 2-й этаж]]></data>
+
+  <data name="ru_pano923_title"><![CDATA[Второй блок]]></data>
+  <data name="ru_pano925_title"><![CDATA[2.12]]></data>
+  <data name="ru_pano929_title"><![CDATA[2.16]]></data>
+  <data name="ru_pano930_title"><![CDATA[Первый блок]]></data>
+  <data name="ru_pano931_title"><![CDATA[2.18]]></data>
+  <data name="ru_pano932_title"><![CDATA[2.19]]></data>
+  <data name="ru_pano68_title"><![CDATA[2.23]]></data>
+  <data name="ru_pano70_title"><![CDATA[2.25]]></data>
+  <data name="ru_pano71_title"><![CDATA[2.26]]></data>
+  <data name="ru_pano73_title"><![CDATA[2.29]]></data>
+  <data name="ru_pano74_title"><![CDATA[2.30]]></data>
+  <data name="ru_pano75_title"><![CDATA[2.31]]></data>
+  <data name="ru_pano76_title"><![CDATA[2.32]]></data>
+  <data name="ru_pano77_title"><![CDATA[2.33]]></data>
+  <data name="ru_pano230_title"><![CDATA[2.59]]></data>
+  <data name="ru_pano82_title"><![CDATA[2.39]]></data>
+  <data name="ru_pano83_title"><![CDATA[2.40]]></data>
+  <data name="ru_pano247_title"><![CDATA[2.42]]></data>
+  <data name="ru_pano248_title"><![CDATA[2.43]]></data>
+  <data name="ru_pano249_title"><![CDATA[2.44]]></data>
+  <data name="ru_pano250_title"><![CDATA[Третий блок]]></data>
+  <data name="ru_pano254_title"><![CDATA[2.49]]></data>
+  <data name="ru_pano257_title"><![CDATA[2.52]]></data>
+  <data name="ru_pano258_title"><![CDATA[2.53]]></data>
+  <data name="ru_pano256_title"><![CDATA[2.51]]></data>
+  <data name="ru_pano253_title"><![CDATA[2.48]]></data>
+  <data name="ru_pano13265_title"><![CDATA[Четвёртый блок]]></data>
+  <data name="ru_pano928_title"><![CDATA[2.15]]></data>
+
+  <data name="ru_panogroup843_title"><![CDATA[Учебный корпус №1: 3-й этаж]]></data>
+
+  <data name="ru_pano825_title"><![CDATA[Второй блок]]></data>
+  <data name="ru_pano804_title"><![CDATA[3.11]]></data>
+  <data name="ru_pano3318_title"><![CDATA[3.13]]></data>
+  <data name="ru_pano807_title"><![CDATA[3.14]]></data>
+  <data name="ru_pano808_title"><![CDATA[3.15]]></data>
+  <data name="ru_pano810_title"><![CDATA[Первй блок]]></data>
+  <data name="ru_pano813_title"><![CDATA[3.20]]></data>
+  <data name="ru_pano814_title"><![CDATA[3.21]]></data>
+  <data name="ru_pano815_title"><![CDATA[3.22]]></data>
+  <data name="ru_pano816_title"><![CDATA[3.23]]></data>
+  <data name="ru_pano817_title"><![CDATA[3.24]]></data>
+  <data name="ru_pano823_title"><![CDATA[3.30]]></data>
+  <data name="ru_pano824_title"><![CDATA[3.31]]></data>
+  <data name="ru_pano826_title"><![CDATA[3.33]]></data>
+  <data name="ru_pano827_title"><![CDATA[3.34]]></data>
+  <data name="ru_pano828_title"><![CDATA[3.35]]></data>
+  <data name="ru_pano830_title"><![CDATA[3.37]]></data>
+  <data name="ru_pano831_title"><![CDATA[3.38]]></data>
+  <data name="ru_pano832_title"><![CDATA[3.39]]></data>
+  <data name="ru_pano833_title"><![CDATA[3.40]]></data>
+  <data name="ru_pano834_title"><![CDATA[Третий блок]]></data>
+  <data name="ru_pano837_title"><![CDATA[3.44]]></data>
+  <data name="ru_pano838_title"><![CDATA[3.45]]></data>
+  <data name="ru_pano839_title"><![CDATA[3.46]]></data>
+  <data name="ru_pano841_title"><![CDATA[3.48]]></data>
+  <data name="ru_pano822_title"><![CDATA[3.29]]></data>
+
+  <data name="ru_panogroup1253_title"><![CDATA[Учебный корпус №1: 4-й этаж]]></data>
+
+  <data name="ru_pano1233_title"><![CDATA[Второй блок]]></data>
+  <data name="ru_pano1214_title"><![CDATA[4.10]]></data>
+  <data name="ru_pano1215_title"><![CDATA[4.11]]></data>
+  <data name="ru_pano1216_title"><![CDATA[4.12]]></data>
+  <data name="ru_pano1217_title"><![CDATA[4.13]]></data>
+  <data name="ru_pano1218_title"><![CDATA[4.14]]></data>
+  <data name="ru_pano1220_title"><![CDATA[4.16]]></data>
+  <data name="ru_pano1221_title"><![CDATA[4.17]]></data>
+  <data name="ru_pano1222_title"><![CDATA[4.18]]></data>
+  <data name="ru_pano1224_title"><![CDATA[Первый блок]]></data>
+  <data name="ru_pano1227_title"><![CDATA[4.23]]></data>
+  <data name="ru_pano1231_title"><![CDATA[4.27]]></data>
+  <data name="ru_pano1234_title"><![CDATA[4.30]]></data>
+  <data name="ru_pano1235_title"><![CDATA[4.31]]></data>
+  <data name="ru_pano1236_title"><![CDATA[4.32]]></data>
+  <data name="ru_pano1239_title"><![CDATA[4.35]]></data>
+  <data name="ru_pano1240_title"><![CDATA[4.36]]></data>
+  <data name="ru_pano1241_title"><![CDATA[4.37]]></data>
+  <data name="ru_pano1242_title"><![CDATA[4.38]]></data>
+  <data name="ru_pano1243_title"><![CDATA[4.39]]></data>
+  <data name="ru_pano1244_title"><![CDATA[Третий бок]]></data>
+  <data name="ru_pano1245_title"><![CDATA[4.41]]></data>
+  <data name="ru_pano1246_title"><![CDATA[4.42]]></data>
+  <data name="ru_pano1247_title"><![CDATA[4.43]]></data>
+  <data name="ru_pano1248_title"><![CDATA[4.44]]></data>
+  <data name="ru_pano1249_title"><![CDATA[4.45]]></data>
+  <data name="ru_pano1251_title"><![CDATA[4.47]]></data>
+
+  <data name="ru_panogroup1739_title"><![CDATA[Учебный корпус №1: 5-й этаж]]></data>
+
+  <data name="ru_pano1336_title"><![CDATA[Второй блок]]></data>
+  <data name="ru_pano1342_title"><![CDATA[5.2]]></data>
+  <data name="ru_pano1348_title"><![CDATA[5.3]]></data>
+  <data name="ru_pano1349_title"><![CDATA[5.4]]></data>
+  <data name="ru_pano1350_title"><![CDATA[5.5]]></data>
+  <data name="ru_pano1351_title"><![CDATA[5.6]]></data>
+  <data name="ru_pano1352_title"><![CDATA[5.7]]></data>
+  <data name="ru_pano1353_title"><![CDATA[5.8]]></data>
+  <data name="ru_pano1354_title"><![CDATA[5.9]]></data>
+  <data name="ru_pano1332_title"><![CDATA[5.10]]></data>
+  <data name="ru_pano1333_title"><![CDATA[5.11]]></data>
+  <data name="ru_pano1334_title"><![CDATA[5.12]]></data>
+  <data name="ru_pano1335_title"><![CDATA[5.13]]></data>
+  <data name="ru_pano1337_title"><![CDATA[5.15]]></data>
+  <data name="ru_pano1338_title"><![CDATA[5.16]]></data>
+  <data name="ru_pano1339_title"><![CDATA[5.17]]></data>
+  <data name="ru_pano1340_title"><![CDATA[5.18]]></data>
+  <data name="ru_pano1345_title"><![CDATA[5.22]]></data>
+  <data name="ru_pano1344_title"><![CDATA[5.21]]></data>
+
+
+	<data name="ru_spotmap16549_tooltip"><![CDATA[0.3]]></data>
+	<data name="ru_spotmap16550_tooltip"><![CDATA[1 этаж]]></data>
+	<data name="ru_spotmap16551_tooltip"><![CDATA[2.35]]></data>
+	<data name="ru_spotmap16552_tooltip"><![CDATA[2.36]]></data>
+	<data name="ru_spotmap16553_tooltip"><![CDATA[Второй блок]]></data>
+	<data name="ru_spotmap16554_tooltip"><![CDATA[1.10]]></data>
+	<data name="ru_spotmap16555_tooltip"><![CDATA[1.11]]></data>
+	<data name="ru_spotmap16556_tooltip"><![CDATA[1.14]]></data>
+	<data name="ru_spotmap16557_tooltip"><![CDATA[1.17]]></data>
+	<data name="ru_spotmap16558_tooltip"><![CDATA[1.18]]></data>
+	<data name="ru_spotmap16559_tooltip"><![CDATA[Первый блок]]></data>
+	<data name="ru_spotmap16560_tooltip"><![CDATA[1.12]]></data>
+	<data name="ru_spotmap16561_tooltip"><![CDATA[1.16]]></data>
+	<data name="ru_spotmap16562_tooltip"><![CDATA[0.1]]></data>
+	<data name="ru_spotmap16563_tooltip"><![CDATA[0.2]]></data>
+	<data name="ru_spotmap16564_tooltip"><![CDATA[Второй блок]]></data>
+	<data name="ru_spotmap16565_tooltip"><![CDATA[2.12]]></data>
+	<data name="ru_spotmap16566_tooltip"><![CDATA[2.16]]></data>
+	<data name="ru_spotmap16567_tooltip"><![CDATA[2.18]]></data>
+	<data name="ru_spotmap16568_tooltip"><![CDATA[2.23]]></data>
+	<data name="ru_spotmap16569_tooltip"><![CDATA[2.25]]></data>
+	<data name="ru_spotmap16570_tooltip"><![CDATA[2.26]]></data>
+	<data name="ru_spotmap16571_tooltip"><![CDATA[2.29]]></data>
+	<data name="ru_spotmap16572_tooltip"><![CDATA[2.30]]></data>
+	<data name="ru_spotmap16573_tooltip"><![CDATA[2.31]]></data>
+	<data name="ru_spotmap16574_tooltip"><![CDATA[2.32]]></data>
+	<data name="ru_spotmap16575_tooltip"><![CDATA[2.59]]></data>
+	<data name="ru_spotmap16576_tooltip"><![CDATA[2.39]]></data>
+	<data name="ru_spotmap16577_tooltip"><![CDATA[2.40]]></data>
+	<data name="ru_spotmap16578_tooltip"><![CDATA[2.42]]></data>
+	<data name="ru_spotmap16579_tooltip"><![CDATA[2.43]]></data>
+	<data name="ru_spotmap16580_tooltip"><![CDATA[Третий блок]]></data>
+	<data name="ru_spotmap16581_tooltip"><![CDATA[2.52]]></data>
+	<data name="ru_spotmap16582_tooltip"><![CDATA[2.53]]></data>
+	<data name="ru_spotmap16583_tooltip"><![CDATA[2.51]]></data>
+	<data name="ru_spotmap16584_tooltip"><![CDATA[2.48]]></data>
+	<data name="ru_spotmap16585_tooltip"><![CDATA[Четвёртый блок]]></data>
+	<data name="ru_spotmap16586_tooltip"><![CDATA[2.15]]></data>
+	<data name="ru_spotmap16587_tooltip"><![CDATA[Второй блок]]></data>
+	<data name="ru_spotmap16588_tooltip"><![CDATA[3.11]]></data>
+	<data name="ru_spotmap16589_tooltip"><![CDATA[3.13]]></data>
+	<data name="ru_spotmap16590_tooltip"><![CDATA[3.14]]></data>
+	<data name="ru_spotmap16591_tooltip"><![CDATA[3.15]]></data>
+	<data name="ru_spotmap16592_tooltip"><![CDATA[Первй блок]]></data>
+	<data name="ru_spotmap16593_tooltip"><![CDATA[3.20]]></data>
+	<data name="ru_spotmap16594_tooltip"><![CDATA[3.21]]></data>
+	<data name="ru_spotmap16595_tooltip"><![CDATA[3.22]]></data>
+	<data name="ru_spotmap16596_tooltip"><![CDATA[3.23]]></data>
+	<data name="ru_spotmap16597_tooltip"><![CDATA[3.24]]></data>
+	<data name="ru_spotmap16598_tooltip"><![CDATA[3.30]]></data>
+	<data name="ru_spotmap16599_tooltip"><![CDATA[3.31]]></data>
+	<data name="ru_spotmap16600_tooltip"><![CDATA[3.33]]></data>
+	<data name="ru_spotmap16601_tooltip"><![CDATA[3.34]]></data>
+	<data name="ru_spotmap16602_tooltip"><![CDATA[3.35]]></data>
+	<data name="ru_spotmap16603_tooltip"><![CDATA[3.37]]></data>
+	<data name="ru_spotmap16604_tooltip"><![CDATA[3.38]]></data>
+	<data name="ru_spotmap16605_tooltip"><![CDATA[3.39]]></data>
+	<data name="ru_spotmap16606_tooltip"><![CDATA[3.40]]></data>
+	<data name="ru_spotmap16607_tooltip"><![CDATA[Третий блок]]></data>
+	<data name="ru_spotmap16608_tooltip"><![CDATA[3.44]]></data>
+	<data name="ru_spotmap16609_tooltip"><![CDATA[3.45]]></data>
+	<data name="ru_spotmap16610_tooltip"><![CDATA[3.46]]></data>
+	<data name="ru_spotmap16611_tooltip"><![CDATA[3.48]]></data>
+	<data name="ru_spotmap16612_tooltip"><![CDATA[3.29]]></data>
+	<data name="ru_spotmap16613_tooltip"><![CDATA[Второй блок]]></data>
+	<data name="ru_spotmap16614_tooltip"><![CDATA[4.10]]></data>
+	<data name="ru_spotmap16615_tooltip"><![CDATA[4.11]]></data>
+	<data name="ru_spotmap16616_tooltip"><![CDATA[4.12]]></data>
+	<data name="ru_spotmap16617_tooltip"><![CDATA[4.13]]></data>
+	<data name="ru_spotmap16618_tooltip"><![CDATA[4.14]]></data>
+	<data name="ru_spotmap16619_tooltip"><![CDATA[4.16]]></data>
+	<data name="ru_spotmap16620_tooltip"><![CDATA[4.17]]></data>
+	<data name="ru_spotmap16621_tooltip"><![CDATA[4.18]]></data>
+	<data name="ru_spotmap16622_tooltip"><![CDATA[Первый блок]]></data>
+	<data name="ru_spotmap16623_tooltip"><![CDATA[4.23]]></data>
+	<data name="ru_spotmap16624_tooltip"><![CDATA[4.27]]></data>
+	<data name="ru_spotmap16625_tooltip"><![CDATA[4.30]]></data>
+	<data name="ru_spotmap16626_tooltip"><![CDATA[4.31]]></data>
+	<data name="ru_spotmap16627_tooltip"><![CDATA[4.32]]></data>
+	<data name="ru_spotmap16628_tooltip"><![CDATA[4.35]]></data>
+	<data name="ru_spotmap16629_tooltip"><![CDATA[4.36]]></data>
+	<data name="ru_spotmap16630_tooltip"><![CDATA[4.37]]></data>
+	<data name="ru_spotmap16631_tooltip"><![CDATA[4.38]]></data>
+	<data name="ru_spotmap16632_tooltip"><![CDATA[4.39]]></data>
+	<data name="ru_spotmap16633_tooltip"><![CDATA[Третий бок]]></data>
+	<data name="ru_spotmap16634_tooltip"><![CDATA[4.41]]></data>
+	<data name="ru_spotmap16635_tooltip"><![CDATA[4.42]]></data>
+	<data name="ru_spotmap16636_tooltip"><![CDATA[4.43]]></data>
+	<data name="ru_spotmap16637_tooltip"><![CDATA[4.44]]></data>
+	<data name="ru_spotmap16638_tooltip"><![CDATA[4.45]]></data>
+	<data name="ru_spotmap16639_tooltip"><![CDATA[4.47]]></data>
+	<data name="ru_spotmap16640_tooltip"><![CDATA[Второй блок]]></data>
+	<data name="ru_spotmap16641_tooltip"><![CDATA[5.2]]></data>
+	<data name="ru_spotmap16642_tooltip"><![CDATA[5.3]]></data>
+	<data name="ru_spotmap16643_tooltip"><![CDATA[5.4]]></data>
+	<data name="ru_spotmap16644_tooltip"><![CDATA[5.5]]></data>
+	<data name="ru_spotmap16645_tooltip"><![CDATA[5.6]]></data>
+	<data name="ru_spotmap16646_tooltip"><![CDATA[5.7]]></data>
+	<data name="ru_spotmap16647_tooltip"><![CDATA[5.8]]></data>
+	<data name="ru_spotmap16648_tooltip"><![CDATA[5.9]]></data>
+	<data name="ru_spotmap16649_tooltip"><![CDATA[5.10]]></data>
+	<data name="ru_spotmap16650_tooltip"><![CDATA[5.11]]></data>
+	<data name="ru_spotmap16651_tooltip"><![CDATA[5.12]]></data>
+	<data name="ru_spotmap16652_tooltip"><![CDATA[5.13]]></data>
+	<data name="ru_spotmap16653_tooltip"><![CDATA[5.15]]></data>
+	<data name="ru_spotmap16654_tooltip"><![CDATA[5.16]]></data>
+	<data name="ru_spotmap16655_tooltip"><![CDATA[5.17]]></data>
+	<data name="ru_spotmap16656_tooltip"><![CDATA[5.18]]></data>
+	<data name="ru_spotmap16657_tooltip"><![CDATA[5.22]]></data>
+	<data name="ru_spotmap16658_tooltip"><![CDATA[5.21]]></data>
+
+
+
+	<data name="ru_panogroup11_floor_title"><![CDATA[Ректорат: 1-й этаж]]></data>
+	<data name="ru_spotmap5505_tooltip"><![CDATA[1 этаж]]></data>
+	<data name="ru_panogroup84_floor_title"><![CDATA[Ректорат: 2-й этаж]]></data>
+	<data name="ru_spotmap5506_tooltip"><![CDATA[2.36]]></data>
+	<data name="ru_spotmap5507_tooltip"><![CDATA[%p]]></data>
+	<data name="ru_panogroup56_floor_title"><![CDATA[Учебный корпус №1: 1-й этаж]]></data>
+	<data name="ru_spotmap5517_tooltip"><![CDATA[Первый блок]]></data>
+	<data name="ru_spotmap5518_tooltip"><![CDATA[Второй блок]]></data>
+	<data name="ru_panogroup933_floor_title"><![CDATA[Учебный корпус №1: 2-й этаж]]></data>
+	<data name="ru_spotmap5530_tooltip"><![CDATA[Первый блок]]></data>
+	<data name="ru_spotmap5531_tooltip"><![CDATA[Четвёртый блок]]></data>
+	<data name="ru_spotmap5532_tooltip"><![CDATA[Третий блок]]></data>
+	<data name="ru_spotmap5533_tooltip"><![CDATA[Второй блок]]></data>
+	<data name="ru_panogroup843_floor_title"><![CDATA[Учебный корпус №1: 3-й этаж]]></data>
+	<data name="ru_spotmap5508_tooltip"><![CDATA[Первй блок]]></data>
+	<data name="ru_spotmap5509_tooltip"><![CDATA[Третий блок]]></data>
+	<data name="ru_spotmap5510_tooltip"><![CDATA[Второй блок]]></data>
+	<data name="ru_panogroup1253_floor_title"><![CDATA[Учебный корпус №1: 4-й этаж]]></data>
+	<data name="ru_spotmap5527_tooltip"><![CDATA[Первый блок]]></data>
+	<data name="ru_spotmap5528_tooltip"><![CDATA[Второй блок]]></data>
+	<data name="ru_spotmap5529_tooltip"><![CDATA[Третий бок]]></data>
+	<data name="ru_panogroup1739_floor_title"><![CDATA[Учебный корпус №1: 5-й этаж]]></data>
+	<data name="ru_spotmap5526_tooltip"><![CDATA[Второй блок]]></data>
+
+  <data name="ru_contextmenuopenFsLabel"><![CDATA[Enter Fullscreen]]></data>
+  <data name="ru_contextmenucloseFsLabel"><![CDATA[Exit Fullscreen]]></data>
+  <data name="ru_contextmenunormallabel"><![CDATA[Normal View]]></data>
+  <data name="ru_contextmenuarchitecturallabel"><![CDATA[Architectural View]]></data>
+  <data name="ru_contextmenulittleplanetlabel"><![CDATA[Little Planet View]]></data>
+  <data name="ru_floorPlanmenu_label"><![CDATA[Select a floor plan]]></data>
+  <data name="ru_logowebsiteurl"><![CDATA[]]></data>
+  <data name="ru_logotooltipText"><![CDATA[Open website]]></data>
+
+
+  <data name="ru_vr_setup_hmd0"><![CDATA[SELECT YOUR HMD]]></data>
+  <data name="ru_vr_setup_advanced"><![CDATA[ADVANCED SETTINGS]]></data>
+  <data name="ru_vr_setup_title"><![CDATA[WEB VR SETTINGS]]></data>
+  <data name="ru_vr_setup_dvn1"><![CDATA[Device:]]></data>
+  <data name="ru_vr_setup_siz1"><![CDATA[Screen size:]]></data>
+  <data name="ru_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="ru_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="ru_vr_setup_hmd3"><![CDATA[Customize]]></data>
+  <data name="ru_vr_setup_cal"><![CDATA[Calibrate gyroscope]]></data>
+  <data name="ru_vr_setup_sav"><![CDATA[SAVE]]></data>
+  <data name="ru_vr_setup_rst"><![CDATA[RESET]]></data>
+  <data name="ru_vr_setup_simple"><![CDATA[SIMPLE]]></data>
+  <data name="ru_vr_setup_cls"><![CDATA[CLOSE]]></data>
+  <data name="ru_vr_setup_m31"><![CDATA[HMD SETTINGS]]></data>
+  <data name="ru_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="ru_vr_setup_dst1"><![CDATA[Distortion:]]></data>
+  <data name="ru_vr_setup_d2tx"><![CDATA[Distortion 2:]]></data>
+  <data name="ru_vr_setup_vig1"><![CDATA[Vignette:]]></data>
+  <data name="ru_vr_setup_cac1"><![CDATA[Chromatic aberration:]]></data>
+  <data name="ru_vr_setup_olp1"><![CDATA[Overlap:]]></data>
+  <data name="ru_vr_setup_m35"><![CDATA[RETURN]]></data>
+  <data name="ru_vr_setup_cb1"><![CDATA[GYROSCOPE]]></data>
+  <data name="ru_vr_setup_cb2"><![CDATA[Place the device on a flat and[br]stable surface and tab CALIBRATE[br]to correct a gyroscope drifting.]]></data>
+  <data name="ru_vr_setup_cb3"><![CDATA[CALIBRATE]]></data>
+  <data name="ru_vr_setup_cb4"><![CDATA[RESET]]></data>
+  <data name="ru_vr_setup_cb5"><![CDATA[RETURN]]></data>
+  <data name="ru_vr_setup_cb6"><![CDATA[Calibrating...]]></data>
+  <data name="ru_vr_setup_cb7"><![CDATA[Successful calibration]]></data>
+  <data name="ru_vr_setup_cb8"><![CDATA[Calibration failed]]></data>
+  <data name="ru_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</krpano>
