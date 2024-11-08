@@ -12,6 +12,7 @@
 
   <data name="ru_pano14516_title"><![CDATA[0.3]]></data>
   <data name="ru_pano10_title"><![CDATA[1 этаж]]></data>
+  <data name="ru_spotpolygon19112_tooltip"><![CDATA[mamont]]></data>
 
   <data name="ru_panogroup84_title"><![CDATA[Ректорат: 2-й этаж]]></data>
 
@@ -64,6 +65,7 @@
   <data name="ru_pano256_title"><![CDATA[2.51]]></data>
   <data name="ru_pano253_title"><![CDATA[2.48]]></data>
   <data name="ru_pano13265_title"><![CDATA[Четвёртый блок]]></data>
+  <data name="ru_spotpolygon19107_tooltip"><![CDATA[globus]]></data>
   <data name="ru_pano928_title"><![CDATA[2.15]]></data>
   <data name="ru_pano77_title"><![CDATA[2.33]]></data>
 
@@ -155,6 +157,13 @@
   <data name="ru_pano1344_title"><![CDATA[5.21]]></data>
 
 
+  <data name="ru_pano19104_title"><![CDATA[mamont]]></data>
+  <data name="ru_spotpolygon19106_tooltip"><![CDATA[Перейти к глобусу]]></data>
+
+
+  <data name="ru_pano19108_title"><![CDATA[globus]]></data>
+
+
 
 
 
@@ -231,6 +240,12 @@
   <data name="ru_vr_setup_cb7"><![CDATA[Successful calibration]]></data>
   <data name="ru_vr_setup_cb8"><![CDATA[Calibration failed]]></data>
   <data name="ru_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
+
+
+
+
+
+
 
 
 
