@@ -115,6 +115,31 @@
 
 
 
+    
+  <!-- Spot Style - Default Point Spot Style 1 -->
+  <style name="IconDefaultPointSpotStyle1"
+         url="%FIRSTXML%/spots/left__1__user_defaultpoint3.png"
+         visible="false"
+         onhover="onhoverIconDefaultPointSpotStyle1"
+         onout="onoutIconDefaultPointSpotStyle1"
+
+
+         />
+
+  <action name="onhoverIconDefaultPointSpotStyle1">
+    showtooltip('hotspot');
+  </action>
+
+
+  <action name="onoutIconDefaultPointSpotStyle1">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
 <!-- ********** -->
 <!-- Context menu -->
 <!-- id : contextmenu -->
@@ -190,19 +215,13 @@
 			<option name="fp_selector_label" value="floorPlanmenu_label" type="string" />
 			<option name="display_title" value="true" type="bool" />
 			<option name="title" value="panogroup11_floor_title" type="string" />
-			<option name="title_font" value="Acrom" type="string" />
+			<option name="title_font" value="Arial" type="string" />
 			<option name="title_size" value="11" type="int" />
 			<option name="title_weight" value="bold" type="string" />
 			<option name="title_decoration" value="normal" type="string" />
 			<option name="title_color" value="ededed" type="string" />
 			<option name="display_orientation" value="false" type="bool" />
-			<option name="display_radar" value="true" type="bool" />
-			<option name="radar_radius" value="25" type="int" />
-			<option name="radar_line_width" value="1" type="int" />
-			<option name="radar_line_color" value="ffffff" type="string" />
-			<option name="radar_line_alpha" value="0.50000762951094835" type="float" />
-			<option name="radar_fill_color" value="ffffff" type="string" />
-			<option name="radar_fill_alpha" value="0.30000762951094834" type="float" />
+			<option name="display_radar" value="false" type="bool" />
 			<option name="selected_effect" value="pulsate" type="string" />
 			<option name="close_on_click" value="false" type="bool" />
 			<option name="position" value="topright" type="string" />
@@ -406,7 +425,6 @@
 	
 	<events name="floorPlanEvents" 
 	onxmlcomplete="ifnot(floorPlanFloorPlanLoaded,set(tour_displayfloorplan,true););floorPlanActivateDefaultSpot();" 
-	onviewchanged="floorPlanOnViewChange();" 
 	onhidetourfloorplan="delayedcall(0.3,floorPlanCloseTourFloorPlan(););" 
 	onshowtourfloorplan="if(tour_displayfloorplan,floorPlanOpenTourFloorPlan(););" 
 	onTourStart="set(loadedState_floorPlanArea, get(tour_displaycontrols));floorPlanOpenTourFloorPlan();"
@@ -446,15 +464,6 @@
 		openKolorArea_floorPlanArea();
 	</action>
 	
-	<action name="floorPlanOnViewChange">
-		if (floorPlanFloorPlanLoaded == true,
-			ifnot(ptplugin[floorPlan].floorplanItems[0].selectedSpot == "",
-				ifnot(scene[get(xml.scene)].planar,
-					js(invokePluginFunction(floorPlan, changeDirection, get(xml.scene), get(view.hlookat), get(view.hfov)));
-				);
-			);
-		);
-	</action>
 	
 	<action name="floorPlanActivateSpot">
 		
@@ -469,13 +478,6 @@
 		
 		js(invokePluginFunction(floorPlan, selectSpot, %1, %2, %3));
 
-		if(%1 !== "",
-			if(scene[get(xml.scene)].planar,
-				js(invokePluginFunction(floorPlan, hideRadar));
-			,
-				js(invokePluginFunction(floorPlan, changeDirection, get(xml.scene), get(view.hlookat), get(view.hfov)));
-			);
-		);
 	</action>
 	
 	<action name="floorPlanDeactivateSpot">
@@ -574,7 +576,7 @@
 		<option name="margin_y" value="0" type="int" />
 		<option name="display_title" value="true" type="bool" />
 		<option name="title" value="panogroup11_floor_title" type="string" />
-		<option name="title_font" value="Acrom" type="string" />
+		<option name="title_font" value="Arial" type="string" />
 		<option name="title_size" value="11" type="int" />
 		<option name="title_weight" value="bold" type="string" />
 		<option name="title_decoration" value="normal" type="string" />
@@ -588,7 +590,7 @@
 		<option name="overlay_color" value="000000" type="string" />
 		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
 
-		<option name="padding" value="0" type="int" />
+		<option name="padding" value="20" type="int" />
 		<option name="topleft_radius" value="0" type="int" />
 		<option name="topright_radius" value="0" type="int" />
 		<option name="bottomleft_radius" value="0" type="int" />
