@@ -112,8 +112,8 @@
     set(layer[splashscreenlayer].keep, true);
     set(layer[splashscreenlayer].onclick, hideintroimage());
     set(layer[splashscreenlayer].alpha, 1.0);
-    set(layer[splashscreenlayer].onloaded, resize_splashscreen());
-    set(layer[splashscreenlayer].url, '%FIRSTXML%/graphics/_1072108910901072107410821072.png');
+    set(layer[splashscreenlayer].onloaded, resize_splashscreen();autohideintroimage(););
+    set(layer[splashscreenlayer].url, '%FIRSTXML%/graphics/_1086107310771076108510721103_10791072108910901072107410821072.png');
   </action>
   <action name="resize_splashscreen">
     if(layer[splashscreenlayer].url,
@@ -145,7 +145,7 @@
     );
   </action>
   <action name="hideintroimage">
-
+    stopdelayedcall(hideintroimagecall);
     tween(layer[splashscreenlayer].alpha, 0.0, 0.5, default,
       tween(layer[splashscreenlayerbg].alpha , 0.0, 0.5, default,
         removelayer(splashscreenlayer);
@@ -155,9 +155,13 @@
       );
     );
   </action>
+  <action name="autohideintroimage">
+    hideTooltip();
+    delayedcall(hideintroimagecall, 7, hideintroimage() ); 
+  </action>
 
   <action name="skipintroaction">
-
+    stopdelayedcall(hideintroimagecall);
     removelayer(splashscreenlayerbg);
     removelayer(splashscreenlayer);
    </action>

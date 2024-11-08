@@ -33,16 +33,56 @@
   <!-- unsupported kind of display : PointMap -->
 
 
-<!-- ********** -->
-<!-- Double Click -->
-<!-- id : doubleclick -->
-<!-- ********** -->
+    
+  <!-- Spot Style - up -->
+  <style name="Iconup"
+         url="%FIRSTXML%/spots/animation_user_defaultpoint1.png"
+         visible="false"
+         onhover="onhoverIconup"
+         onout="onoutIconup"
 
-  <plugin name="doubleclick" url.flash="%FIRSTXML%/graphics/doubleclick/fieldofview_dc.swf" url.html5="%FIRSTXML%/graphics/doubleclick/dctouch.min.js" keep="true" ondblclick="doubleclick_ondoubleclick();"/>
-  <action name="doubleclick_ondoubleclick">switchFullscreen();
+
+         />
+
+  <action name="onhoverIconup">
+    showtooltip('hotspot');
+  </action>
+
+
+  <action name="onoutIconup">
+    hideTooltip();
+
 
 
   </action>
+
+
+
+    
+  <!-- Spot Style - down -->
+  <style name="Icondown"
+         url="%FIRSTXML%/spots/animation_user_defaultpoint2.png"
+         visible="false"
+         rotate="180"
+         onhover="onhoverIcondown"
+         onout="onoutIcondown"
+
+
+         />
+
+  <action name="onhoverIcondown">
+    showtooltip('hotspot');
+  </action>
+
+
+  <action name="onoutIcondown">
+    hideTooltip();
+
+
+
+  </action>
+
+
 
 <!-- ********** -->
 <!-- Context menu -->
@@ -125,11 +165,17 @@
 			<option name="title_decoration" value="normal" type="string" />
 			<option name="title_color" value="ededed" type="string" />
 			<option name="display_orientation" value="false" type="bool" />
-			<option name="display_radar" value="false" type="bool" />
+			<option name="display_radar" value="true" type="bool" />
+			<option name="radar_radius" value="25" type="int" />
+			<option name="radar_line_width" value="1" type="int" />
+			<option name="radar_line_color" value="ffffff" type="string" />
+			<option name="radar_line_alpha" value="0.50000762951094835" type="float" />
+			<option name="radar_fill_color" value="ffffff" type="string" />
+			<option name="radar_fill_alpha" value="0.30000762951094834" type="float" />
 			<option name="selected_effect" value="pulsate" type="string" />
 			<option name="close_on_click" value="false" type="bool" />
 			<option name="position" value="topright" type="string" />
-			<option name="zorder" value="3" type="int" />
+			<option name="zorder" value="2" type="int" />
 			<option name="use_i18n" value="true" type="bool" />
 		</settings>
 		
@@ -144,8 +190,8 @@
 								url="floorplan/_1077108210901086_10721090_1_1101109010721078_panogroup11.png" 
 								title="panogroup11_floor_title"
 								heading="0">
-										<spot name="spotmap5505" posX="0.735980988" posY="0.551401973" heading="91" desc="spotmap5505_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano10" jsClick="spotmap5505ActionSpotFloorPlan">
-											<icon url="spots/указатель2_user_defaultmap2.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5505" posX="0.729946554" posY="0.609625697" heading="136.79999999999916" desc="spotmap5505_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano10" jsClick="spotmap5505ActionSpotFloorPlan">
+											<icon url="spots/указатель2_user_defaultmap2.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
 							</floorplanItem>
 							<floorplanItem 
@@ -156,11 +202,11 @@
 								url="floorplan/_1077108210901086_10721090_2_1101109010721078_panogroup84.png" 
 								title="panogroup84_floor_title"
 								heading="0">
-										<spot name="spotmap5506" posX="0.834111989" posY="0.665888011" heading="95" desc="spotmap5506_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano80" jsClick="spotmap5506ActionSpotFloorPlan">
-											<icon url="spots/указатель2_user_defaultmap2.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5506" posX="0.807486653" posY="0.703208566" heading="-45.799999999999102" desc="spotmap5506_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano80" jsClick="spotmap5506ActionSpotFloorPlan">
+											<icon url="spots/указатель2_user_defaultmap2.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
-										<spot name="spotmap5507" posX="0.422897011" posY="0.257009" heading="112" desc="spotmap5507_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano13265" jsClick="spotmap5507ActionSpotFloorPlan">
-											<icon url="spots/указатель2_user_defaultmap2.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5507" posX="0.393048137" posY="0.270053476" heading="135.19999999999987" desc="spotmap5507_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano13265" jsClick="spotmap5507ActionSpotFloorPlan">
+											<icon url="spots/указатель2_user_defaultmap2.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
 							</floorplanItem>
 							<floorplanItem 
@@ -171,8 +217,8 @@
 								url="floorplan/_109510771073108510991081_1_1101109010721078_panogroup56.png" 
 								title="panogroup56_floor_title"
 								heading="0">
-										<spot name="spotmap5518" posX="0.126167998" posY="0.0934579" heading="141" desc="spotmap5518_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano40" jsClick="spotmap5518ActionSpotFloorPlan">
-											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5518" posX="0.141711235" posY="0.133689836" heading="-48.199999999998397" desc="spotmap5518_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano40" jsClick="spotmap5518ActionSpotFloorPlan">
+											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
 							</floorplanItem>
 							<floorplanItem 
@@ -183,17 +229,17 @@
 								url="floorplan/_109510771073108510991081_2_1101109010721078_panogroup933.png" 
 								title="panogroup933_floor_title"
 								heading="0">
-										<spot name="spotmap5530" posX="0.0864486024" posY="0.747663975" heading="121" desc="spotmap5530_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano930" jsClick="spotmap5530ActionSpotFloorPlan">
-											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5530" posX="0.0695187151" posY="0.786096275" heading="178.60000000000161" desc="spotmap5530_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano930" jsClick="spotmap5530ActionSpotFloorPlan">
+											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
-										<spot name="spotmap5531" posX="0.67523402" posY="0.607477009" heading="112" desc="spotmap5531_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano13265" jsClick="spotmap5531ActionSpotFloorPlan">
-											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5531" posX="0.668449223" posY="0.652406394" heading="135.19999999999987" desc="spotmap5531_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano13265" jsClick="spotmap5531ActionSpotFloorPlan">
+											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
-										<spot name="spotmap5532" posX="0.820092976" posY="0.0537382998" heading="131" desc="spotmap5532_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano250" jsClick="spotmap5532ActionSpotFloorPlan">
-											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5532" posX="0.815508008" posY="0.0668449178" heading="-92.399999999999878" desc="spotmap5532_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano250" jsClick="spotmap5532ActionSpotFloorPlan">
+											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
-										<spot name="spotmap5533" posX="0.121495001" posY="0.067757003" heading="-8" desc="spotmap5533_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano923" jsClick="spotmap5533ActionSpotFloorPlan">
-											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5533" posX="0.101604275" posY="0.0989304781" heading="-44.999999999999659" desc="spotmap5533_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano923" jsClick="spotmap5533ActionSpotFloorPlan">
+											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
 							</floorplanItem>
 							<floorplanItem 
@@ -204,14 +250,14 @@
 								url="floorplan/_109510771073108510991081_3_1101109010721078_panogroup843.png" 
 								title="panogroup843_floor_title"
 								heading="0">
-										<spot name="spotmap5508" posX="0.0841121972" posY="0.773364007" heading="34" desc="spotmap5508_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano810" jsClick="spotmap5508ActionSpotFloorPlan">
-											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5508" posX="0.0721925125" posY="0.804812849" heading="-1.9999999999997726" desc="spotmap5508_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano810" jsClick="spotmap5508ActionSpotFloorPlan">
+											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
-										<spot name="spotmap5509" posX="0.794393003" posY="0.0560748018" heading="63" desc="spotmap5509_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano834" jsClick="spotmap5509ActionSpotFloorPlan">
-											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5509" posX="0.759358287" posY="0.0748663098" heading="89.199999999999363" desc="spotmap5509_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano834" jsClick="spotmap5509ActionSpotFloorPlan">
+											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
-										<spot name="spotmap5510" posX="0.112149999" posY="0.0934579" heading="56" desc="spotmap5510_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano825" jsClick="spotmap5510ActionSpotFloorPlan">
-											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5510" posX="0.10695187" posY="0.109625667" heading="54.200000000000102" desc="spotmap5510_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano825" jsClick="spotmap5510ActionSpotFloorPlan">
+											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
 							</floorplanItem>
 							<floorplanItem 
@@ -222,14 +268,14 @@
 								url="floorplan/_109510771073108510991081_4_1101109010721078_panogroup1253.png" 
 								title="panogroup1253_floor_title"
 								heading="0">
-										<spot name="spotmap5527" posX="0.0981307998" posY="0.771027982" heading="30" desc="spotmap5527_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano1224" jsClick="spotmap5527ActionSpotFloorPlan">
-											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5527" posX="0.0721925125" posY="0.799465239" heading="-4.799999999999585" desc="spotmap5527_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano1224" jsClick="spotmap5527ActionSpotFloorPlan">
+											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
-										<spot name="spotmap5528" posX="0.116821997" posY="0.0630841032" heading="51" desc="spotmap5528_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano1233" jsClick="spotmap5528ActionSpotFloorPlan">
-											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5528" posX="0.10695187" posY="0.10695187" heading="47.000000000000171" desc="spotmap5528_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano1233" jsClick="spotmap5528ActionSpotFloorPlan">
+											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
-										<spot name="spotmap5529" posX="0.808411002" posY="0.0607477017" heading="60" desc="spotmap5529_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano1244" jsClick="spotmap5529ActionSpotFloorPlan">
-											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5529" posX="0.759358287" posY="0.0775401071" heading="87.600000000001103" desc="spotmap5529_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano1244" jsClick="spotmap5529ActionSpotFloorPlan">
+											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
 							</floorplanItem>
 							<floorplanItem 
@@ -240,8 +286,8 @@
 								url="floorplan/_109510771073108510991081_5_1101109010721078_panogroup1739.png" 
 								title="panogroup1739_floor_title"
 								heading="0">
-										<spot name="spotmap5526" posX="0.126167998" posY="0.0911215022" heading="7" desc="spotmap5526_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano1336" jsClick="spotmap5526ActionSpotFloorPlan">
-											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="center" />
+										<spot name="spotmap5526" posX="0.120320857" posY="0.109625667" heading="135.60000000000167" desc="spotmap5526_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano1336" jsClick="spotmap5526ActionSpotFloorPlan">
+											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
 							</floorplanItem>
 		</floorplanItems>
@@ -300,7 +346,7 @@
 
 </action>
 						<action name="spotmap5509ActionSpotFloorPlan">
-          mainloadscene(pano834);lookat(-72.900000, -0.450000, 90.000000);
+          mainloadscene(pano834);lookat(-64.350000, -0.450000, 90.000000);
 
 </action>
 						<action name="spotmap5510ActionSpotFloorPlan">
@@ -329,6 +375,7 @@
 	
 	<events name="floorPlanEvents" 
 	onxmlcomplete="ifnot(floorPlanFloorPlanLoaded,set(tour_displayfloorplan,true););floorPlanActivateDefaultSpot();" 
+	onviewchanged="floorPlanOnViewChange();" 
 	onhidetourfloorplan="delayedcall(0.3,floorPlanCloseTourFloorPlan(););" 
 	onshowtourfloorplan="if(tour_displayfloorplan,floorPlanOpenTourFloorPlan(););" 
 	onTourStart="set(loadedState_floorPlanArea, get(tour_displaycontrols));floorPlanOpenTourFloorPlan();"
@@ -368,6 +415,15 @@
 		openKolorArea_floorPlanArea();
 	</action>
 	
+	<action name="floorPlanOnViewChange">
+		if (floorPlanFloorPlanLoaded == true,
+			ifnot(ptplugin[floorPlan].floorplanItems[0].selectedSpot == "",
+				ifnot(scene[get(xml.scene)].planar,
+					js(invokePluginFunction(floorPlan, changeDirection, get(xml.scene), get(view.hlookat), get(view.hfov)));
+				);
+			);
+		);
+	</action>
 	
 	<action name="floorPlanActivateSpot">
 		
@@ -382,6 +438,13 @@
 		
 		js(invokePluginFunction(floorPlan, selectSpot, %1, %2, %3));
 
+		if(%1 !== "",
+			if(scene[get(xml.scene)].planar,
+				js(invokePluginFunction(floorPlan, hideRadar));
+			,
+				js(invokePluginFunction(floorPlan, changeDirection, get(xml.scene), get(view.hlookat), get(view.hfov)));
+			);
+		);
 	</action>
 	
 	<action name="floorPlanDeactivateSpot">
@@ -494,7 +557,7 @@
 		<option name="overlay_color" value="000000" type="string" />
 		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
 
-		<option name="padding" value="15" type="int" />
+		<option name="padding" value="0" type="int" />
 		<option name="topleft_radius" value="0" type="int" />
 		<option name="topright_radius" value="0" type="int" />
 		<option name="bottomleft_radius" value="0" type="int" />
@@ -502,17 +565,17 @@
 		<option name="area_border_width" value="0" type="int" />
 		<option name="area_border_color" value="f2f2f2" type="string" />
 		<option name="area_border_alpha" value="1" type="float" />
-		<option name="area_width" value="300" type="int" />
-		<option name="area_height" value="300" type="int" />
-		<option name="area_width_unit" value="pixel" type="string" />
-		<option name="area_height_unit" value="pixel" type="string" />
+		<option name="area_width" value="15" type="int" />
+		<option name="area_height" value="32" type="int" />
+		<option name="area_width_unit" value="percent" type="string" />
+		<option name="area_height_unit" value="percent" type="string" />
 		<option name="animation" value="false" type="bool" />
 		<option name="animation_duration" value="500" type="int" />
 		<option name="close_on_click" value="false" type="bool" />
 		<option name="refresh_content" value="false" type="bool" />
 		<option name="open_callback" value="addKolorFloorPlan('floorPlan', 'floorPlanArea_floorplanDIV');" type="string" />
 		<option name="close_callback" value="invokeKrFunction('closeKolorAreaCallback_floorPlanArea')" type="string" />
-		<option name="zorder" value="3" type="int" />
+		<option name="zorder" value="2" type="int" />
 		<option name="use_i18n" value="true" type="bool" />
 	</settings>
 	</ptplugin>
@@ -612,46 +675,6 @@
 	/>
 	
 <!-- ********** -->
-<!-- Logo -->
-<!-- id : logo -->
-<!-- ********** -->
-
-  <layer align="bottomleft"
-         x="10"
-         y="10"
-         zorder="4"
-         name="logo"
-         keep="true"
-         visible="false"
-         capture="false"
-
-         url="%FIRSTXML%/graphics/logo/nsu_logo_russian_green.png" 
-         handcursor="false"
-
-         height="90"
-         width="270"
-
-         />
-
-  <events name="logoevents" 
-    onTourStart="showlogo();"
-    hidetourcontrols="hidelogo();"
-    showtourcontrols="showlogo();"
-    keep="true" />
-
-  <action name="hidelogo">
-    set(layer[logo].visible, false);
-  </action>
-  <action name="showlogo">
-    if (tour_displaycontrols,
-      set(layer[logo].visible, true);
-    );
-  </action>
-
-
-
-
-<!-- ********** -->
 <!-- Hide floorplan -->
 <!-- id : togglebutton -->
 <!-- ********** -->
@@ -664,7 +687,7 @@
          align="bottom"
          x="84"
          y="10"
-         zorder="5"
+         zorder="3"
          tooltip=""
          onhover="togglebuttonOnHover"
          state="true"
@@ -731,6 +754,47 @@
 />
 
 <!-- ********** -->
+<!-- Logo -->
+<!-- id : logo -->
+<!-- ********** -->
+
+  <layer align="bottomleft"
+         x="10"
+         y="10"
+         zorder="4"
+         name="logo"
+         keep="true"
+         visible="false"
+         capture="false"
+
+         url="%FIRSTXML%/graphics/logo/nsu_logo_russian_green.png" 
+         onclick="openurl(https://www.nsu.ru,_blank);
+"
+
+         width="13%"
+         height="prop"
+
+         />
+
+  <events name="logoevents" 
+    onTourStart="showlogo();"
+    hidetourcontrols="hidelogo();"
+    showtourcontrols="showlogo();"
+    keep="true" />
+
+  <action name="hidelogo">
+    set(layer[logo].visible, false);
+  </action>
+  <action name="showlogo">
+    if (tour_displaycontrols,
+      set(layer[logo].visible, true);
+    );
+  </action>
+
+
+
+
+<!-- ********** -->
 <!-- Hide controls -->
 <!-- id : togglebutton1 -->
 <!-- ********** -->
@@ -743,7 +807,7 @@
          align="bottom"
          x="0"
          y="10"
-         zorder="6"
+         zorder="5"
          tooltip=""
          onhover="togglebutton1OnHover"
          state="true"
@@ -820,7 +884,7 @@
          align="bottom"
          x="-42"
          y="10"
-         zorder="7"
+         zorder="6"
          tooltip=""
          onhover="togglebutton2OnHover"
          state="true"
@@ -899,7 +963,7 @@
          align="bottom"
          x="126"
          y="10"
-         zorder="8"
+         zorder="7"
          tooltip=""
          onhover="togglebutton3OnHover"
          state="true"
@@ -976,7 +1040,7 @@
          align="bottom"
          x="-126"
          y="10"
-         zorder="9"
+         zorder="8"
          visible="false"
          onclick="button1OnClick"
          alpha="0.7"
@@ -1033,7 +1097,7 @@
          align="bottom"
          x="-84"
          y="10"
-         zorder="10"
+         zorder="9"
          visible="false"
          onclick="button2OnClick"
          alpha="0.7"
@@ -1091,7 +1155,7 @@
          align="bottom"
          x="42"
          y="10"
-         zorder="11"
+         zorder="10"
          visible="false"
          onclick="button3OnClick"
          alpha="0.7"
@@ -1177,7 +1241,7 @@ displayImage(%FIRSTXML%/graphics/button3/_1072108910901072107410821072.png
 
   <layer name="loaderinfotextfield"
          keep="true"
-         zorder="12"
+         zorder="11"
          url="%FIRSTXML%/graphics/textfield.swf"
          align="bottomright"
          x="0"
@@ -1199,6 +1263,36 @@ displayImage(%FIRSTXML%/graphics/button3/_1072108910901072107410821072.png
          font-size:12px;
          "
   />
+
+  <!-- Hide / Show Controls -->
+  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
+  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
+
+
+  <!-- FLOORPLAN -->
+  <action name="hideFloorplan">set(tour_displayfloorplan, false);events.dispatch(onhidetourfloorplan);</action>
+  <action name="showFloorplan">set(tour_displayfloorplan, true); events.dispatch(onshowtourfloorplan);</action>
+
+
+<action name="setViewArchitectural">
+	if(normalViewActivated,stopSetViewTweens(););
+	if(current_view_isflat === true,
+		setViewNonFlat(VFOV);
+	);
+	setViewArchitecturalComplete();
+</action>
+
+<action name="setViewArchitecturalComplete">
+	set(view.fovmax, get(panoview.fovmax));
+	set(view.fisheyefovlink, 0.5);
+	tween(view.architectural, 1.0, distance(1.0, 0.45));
+	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
+	tween(view.fisheye, 0.0, distance(1.0, 0.45), easeOutQuad, 
+		set(view.stereographic,false);
+		tween(view.vlookat, get(panoview.v), distance(90, 0.45));
+	);
+	tween(view.fov, get(panoview.fov), distance(50, 0.45));
+</action>
 
 <action name="setViewLittlePlanet">
 	set(sceneisfull360, false);
@@ -1234,40 +1328,6 @@ displayImage(%FIRSTXML%/graphics/button3/_1072108910901072107410821072.png
 	tween(view.fisheye, 1.0, distance(1.0, 0.75));
 	tween(view.fov, 150, distance(179, 0.75));
 </action>
-
-<action name="setViewNormal">
-	stopSetViewTweens();
-	if(current_view_isflat === true,
-		setViewNonFlat(VFOV);
-	);
-	setViewNormalComplete();
-</action>
-
-<action name="setViewNormalComplete">
-	set(view.fisheyefovlink, 0.5);
-	set(view.fovmax, get(panoview.fovmax));
-	tween(view.architectural, 0.0, distance(1.0, 0.45));
-	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	tween(view.vlookat, get(panoview.v), distance(90, 0.45));
-	tween(view.fov, get(panoview.fov), distance(50, 0.45));
-	tween(view.fisheye, 0.0, distance(1.0, 0.45),
-		set(view.stereographic,false);
-	);
-</action>
-
-<krpano normalViewActivated="true" />
-<action name="stopSetViewTweens">
-	stoptween(view.fov);
-	stoptween(view.vlookat);
-	stoptween(view.fisheye);
-	stoptween(view.architectural);
-	stoptween(view.pannini);
-</action>
-
-  <!-- Hide / Show Controls -->
-  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
-  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
-
 
   <action name="displayImage">
     if (layer[displayedStandardImage],
@@ -1446,47 +1506,34 @@ displayImage(%FIRSTXML%/graphics/button3/_1072108910901072107410821072.png
   </action>
 
 
-<action name="setViewArchitectural">
-	if(normalViewActivated,stopSetViewTweens(););
+<action name="setViewNormal">
+	stopSetViewTweens();
 	if(current_view_isflat === true,
 		setViewNonFlat(VFOV);
 	);
-	setViewArchitecturalComplete();
+	setViewNormalComplete();
 </action>
 
-<action name="setViewArchitecturalComplete">
-	set(view.fovmax, get(panoview.fovmax));
+<action name="setViewNormalComplete">
 	set(view.fisheyefovlink, 0.5);
-	tween(view.architectural, 1.0, distance(1.0, 0.45));
+	set(view.fovmax, get(panoview.fovmax));
+	tween(view.architectural, 0.0, distance(1.0, 0.45));
 	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	tween(view.fisheye, 0.0, distance(1.0, 0.45), easeOutQuad, 
-		set(view.stereographic,false);
-		tween(view.vlookat, get(panoview.v), distance(90, 0.45));
-	);
+	tween(view.vlookat, get(panoview.v), distance(90, 0.45));
 	tween(view.fov, get(panoview.fov), distance(50, 0.45));
+	tween(view.fisheye, 0.0, distance(1.0, 0.45),
+		set(view.stereographic,false);
+	);
 </action>
 
-  <!-- FLOORPLAN -->
-  <action name="hideFloorplan">set(tour_displayfloorplan, false);events.dispatch(onhidetourfloorplan);</action>
-  <action name="showFloorplan">set(tour_displayfloorplan, true); events.dispatch(onshowtourfloorplan);</action>
-
-
-  <!-- Fullscreen Management -->
-  <action name="exitFullScreen" devices="fullscreensupport">set(tour_fullscreen,false);js(setFullscreen(false));</action>
-  <action name="enterFullScreen" devices="fullscreensupport">set(tour_fullscreen,true);js(setFullscreen(true));</action>
-  <action name="switchFullScreen">if(tour_fullscreen,exitFullScreen();,enterFullScreen(););</action>
-
-  
-  <events name="krpanoExitFullscreenEvent"
-    onexitfullscreen="if(tour_fullscreen,exitFullScreenChangeEvent(););"
-    keep="true" />
-
-  <action name="exitFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,false);events.dispatch(onexitfullscreen);</action>
-  <action name="enterFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,true);events.dispatch(onenterfullscreen);</action>
-  <action name="exitFullScreenFallback">set(fullscreen,false);</action>
-  <action name="enterFullScreenFallback">set(fullscreen,true);</action>
-  
-  <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
+<krpano normalViewActivated="true" />
+<action name="stopSetViewTweens">
+	stoptween(view.fov);
+	stoptween(view.vlookat);
+	stoptween(view.fisheye);
+	stoptween(view.architectural);
+	stoptween(view.pannini);
+</action>
 
 <action name="viewControlZoomIn">
 	if(%1,
@@ -1527,5 +1574,22 @@ displayImage(%FIRSTXML%/graphics/button3/_1072108910901072107410821072.png
 <action name="viewControlZoomStop">
 	set(fov_moveforce, 0);
 </action>
+
+  <!-- Fullscreen Management -->
+  <action name="exitFullScreen" devices="fullscreensupport">set(tour_fullscreen,false);js(setFullscreen(false));</action>
+  <action name="enterFullScreen" devices="fullscreensupport">set(tour_fullscreen,true);js(setFullscreen(true));</action>
+  <action name="switchFullScreen">if(tour_fullscreen,exitFullScreen();,enterFullScreen(););</action>
+
+  
+  <events name="krpanoExitFullscreenEvent"
+    onexitfullscreen="if(tour_fullscreen,exitFullScreenChangeEvent(););"
+    keep="true" />
+
+  <action name="exitFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,false);events.dispatch(onexitfullscreen);</action>
+  <action name="enterFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,true);events.dispatch(onenterfullscreen);</action>
+  <action name="exitFullScreenFallback">set(fullscreen,false);</action>
+  <action name="enterFullScreenFallback">set(fullscreen,true);</action>
+  
+  <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
 
 </krpano>
