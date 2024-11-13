@@ -27,37 +27,6 @@
 
 
 
-  
-  <!-- Spot Style - Default Polygon Spot Style -->
-  <style name="PolygonDefaultPolygonSpotStyle"
-           visible="false"
-           bordercolor="0xffffff"
-           fillcolor="0xffffff"
-           borderwidth="0"
-           borderalpha="1"
-           fillalpha="0.40000000000000002"
-           capture="false"
-           onhover="onhoverPolygonDefaultPolygonSpotStyle"
-           onover="onoverPolygonDefaultPolygonSpotStyle"
-           onout="onoutPolygonDefaultPolygonSpotStyle"
-           />
-  <action name="onhoverPolygonDefaultPolygonSpotStyle">
-    showTooltip('hotspot');
-  </action>
-
-  <action name="onoverPolygonDefaultPolygonSpotStyle">
-    set(borderwidth, 0);
-  </action>
-
-  <action name="onoutPolygonDefaultPolygonSpotStyle">
-
-    set(borderwidth, 0);
-    hideTooltip();
-  </action>
-
-
-
-
   <!-- unsupported kind of display : PointMap -->
 
 
@@ -116,22 +85,50 @@
 
 
     
-  <!-- Spot Style - Default Point Spot Style 1 -->
-  <style name="IconDefaultPointSpotStyle1"
-         url="%FIRSTXML%/spots/left__1__user_defaultpoint3.png"
+  <!-- Spot Style - Globus -->
+  <style name="IconGlobus"
+         url="%FIRSTXML%/spots/_108510921072_user_defaultpoint8.png"
          visible="false"
-         onhover="onhoverIconDefaultPointSpotStyle1"
-         onout="onoutIconDefaultPointSpotStyle1"
+         onhover="onhoverIconGlobus"
+         onout="onoutIconGlobus"
 
 
          />
 
-  <action name="onhoverIconDefaultPointSpotStyle1">
+  <action name="onhoverIconGlobus">
     showtooltip('hotspot');
   </action>
 
 
-  <action name="onoutIconDefaultPointSpotStyle1">
+  <action name="onoutIconGlobus">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+  <!-- unsupported kind of display : PointMap -->
+
+
+    
+  <!-- Spot Style - Mamont -->
+  <style name="IconMamont"
+         url="%FIRSTXML%/spots/_108510921072_user_defaultpoint9.png"
+         visible="false"
+         onhover="onhoverIconMamont"
+         onout="onoutIconMamont"
+
+
+         />
+
+  <action name="onhoverIconMamont">
+    showtooltip('hotspot');
+  </action>
+
+
+  <action name="onoutIconMamont">
     hideTooltip();
 
 
@@ -243,6 +240,9 @@
 										<spot name="spotmap5505" posX="0.729946971" posY="0.609625995" heading="91" desc="spotmap5505_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano10" jsClick="spotmap5505ActionSpotFloorPlan">
 											<icon url="spots/указатель2_user_defaultmap2.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
 										</spot>
+										<spot name="spotmap19817" posX="0.639534891" posY="0.51065892" heading="91" desc="spotmap19817_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano10" jsClick="spotmap19817ActionSpotFloorPlan">
+											<icon url="spots/указатель4_user_defaultmap5.png" iconWidth="32" iconHeight="32" iconAnchor="center" />
+										</spot>
 							</floorplanItem>
 							<floorplanItem 
 								name="fpitempanogroup84" 
@@ -290,6 +290,9 @@
 										</spot>
 										<spot name="spotmap5533" posX="0.101604" posY="0.0989305004" heading="-8" desc="spotmap5533_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano923" jsClick="spotmap5533ActionSpotFloorPlan">
 											<icon url="spots/указатель3_user_defaultmap0.png" iconWidth="23" iconHeight="23" iconAnchor="bottom" />
+										</spot>
+										<spot name="spotmap19810" posX="0.679756284" posY="0.664861202" heading="112" desc="spotmap19810_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano13265" jsClick="spotmap19810ActionSpotFloorPlan">
+											<icon url="spots/указатель4_user_defaultmap5.png" iconWidth="32" iconHeight="32" iconAnchor="center" />
 										</spot>
 							</floorplanItem>
 							<floorplanItem 
@@ -354,9 +357,13 @@
 	
 	
 	
-					<!-- floorplan panogroup11 spots counter : 1 -->
+					<!-- floorplan panogroup11 spots counter : 2 -->
 						<action name="spotmap5505ActionSpotFloorPlan">
           mainloadscene(pano10);lookat(179.550000, -10.650000, 90.000000);
+
+</action>
+						<action name="spotmap19817ActionSpotFloorPlan">
+          mainloadscene(pano10);lookat(180.000000, 2.204834, 31.544451);
 
 </action>
 					<!-- floorplan panogroup84 spots counter : 2 -->
@@ -373,7 +380,7 @@
           mainloadscene(pano40);lookat(4.050000, -2.250000, 99.000000);
 
 </action>
-					<!-- floorplan panogroup933 spots counter : 4 -->
+					<!-- floorplan panogroup933 spots counter : 5 -->
 						<action name="spotmap5530ActionSpotFloorPlan">
           mainloadscene(pano930);lookat(65.700000, 4.050000, 90.000000);
 
@@ -388,6 +395,10 @@
 </action>
 						<action name="spotmap5533ActionSpotFloorPlan">
           mainloadscene(pano923);lookat(0.000000, 0.000000, 90.000000);
+
+</action>
+						<action name="spotmap19810ActionSpotFloorPlan">
+          mainloadscene(pano13265);lookat(-179.550000, 1.800000, 50.802654);
 
 </action>
 					<!-- floorplan panogroup843 spots counter : 3 -->
@@ -425,7 +436,7 @@
 	
 	<events name="floorPlanEvents" 
 	onxmlcomplete="ifnot(floorPlanFloorPlanLoaded,set(tour_displayfloorplan,true););floorPlanActivateDefaultSpot();" 
-	onhidetourfloorplan="delayedcall(0.3,floorPlanCloseTourFloorPlan(););" 
+	onhidetourfloorplan="floorPlanCloseTourFloorPlan();" 
 	onshowtourfloorplan="if(tour_displayfloorplan,floorPlanOpenTourFloorPlan(););" 
 	onTourStart="set(loadedState_floorPlanArea, get(tour_displaycontrols));floorPlanOpenTourFloorPlan();"
 	changetourlanguage="floorPlanChangeLanguage();"
@@ -599,7 +610,7 @@
 		<option name="area_border_color" value="f2f2f2" type="string" />
 		<option name="area_border_alpha" value="1" type="float" />
 		<option name="area_width" value="15" type="int" />
-		<option name="area_height" value="40" type="int" />
+		<option name="area_height" value="35" type="int" />
 		<option name="area_width_unit" value="percent" type="string" />
 		<option name="area_height_unit" value="percent" type="string" />
 		<option name="animation" value="false" type="bool" />
@@ -623,29 +634,17 @@
 	
 	<action name="openKolorArea_floorPlanArea">
 		ifnot(ptplugin[floorPlanArea].isOpen,
-			if(ptplugin[floorPlanArea].doNotDeleteMe,
-				set(ptplugin[floorPlanArea].currentCall, false);
-				set(ptplugin[floorPlanArea].doNotDeleteMe, false);
 			set(ptplugin[floorPlanArea].isOpen, true);
 			pauseautorotation(forceplugin);
 
 			js(showKolorArea(floorPlanArea, &lt;div id="floorPlanArea_floorplanDIV"&gt;&lt;/div&gt;));
-			,
-				set(ptplugin[floorPlanArea].currentCall, true);
-				set(ptplugin[floorPlanArea].doNotDeleteMe, true);
-				events.dispatch(onremovedisplayedobject);
-				delayedcall(0.3,openKolorArea_floorPlanArea(););
-			);
+			events.dispatch(onremovedisplayedobject);
 		);
 	</action>
 	
 	<action name="closeKolorArea_floorPlanArea">
 		if(ptplugin[floorPlanArea].isOpen,
-			if(ptplugin[floorPlanArea].doNotDeleteMe,
-				set(ptplugin[floorPlanArea].doNotDeleteMe, false);
-			,
 			js(invokePluginFunction(floorPlanArea, closeKolorArea));
-			);
 		);
 	</action>
 	
@@ -658,7 +657,6 @@
 	</action>
 	
 	<action name="closeKolorAreaCallback_floorPlanArea">
-		set(ptplugin[floorPlanArea].doNotDeleteMe, false);
 		if(ptplugin[floorPlanArea].isOpen,resumeautorotation(forceplugin);
 
 			if(ptplugin[floorPlanArea].autorotateBlocked,if(tour_autorotation_openatstartplugin GT 0,dec(tour_autorotation_openatstartplugin);set(ptplugin[floorPlanArea].autorotateBlocked,false);););
@@ -672,39 +670,25 @@
 	</action>
 	
 	<action name="showKolorArea_floorPlanArea">
-		if(ptplugin[floorPlanArea].doNotDeleteMe,
-			set(ptplugin[floorPlanArea].currentCall, false);
-			set(ptplugin[floorPlanArea].doNotDeleteMe, false);
 		set(ptplugin[floorPlanArea].isOpen, true);
 		pauseautorotation(forceplugin);
 
 		js(invokePluginFunction(floorPlanArea, showKolorArea, %1));
-		,
-			set(ptplugin[floorPlanArea].currentCall, true);
-			set(ptplugin[floorPlanArea].doNotDeleteMe, true);
-			events.dispatch(onremovedisplayedobject);
-			delayedcall(0.3,showKolorArea_floorPlanArea(););
-		);
+		events.dispatch(onremovedisplayedobject);
 	</action>
 		
 	<action name="hideKolorArea_floorPlanArea">
-		if(ptplugin[floorPlanArea].doNotDeleteMe,
-			set(ptplugin[floorPlanArea].doNotDeleteMe, false);
-		,
 		resumeautorotation(forceplugin);
 
 		if(ptplugin[floorPlanArea].autorotateBlocked,if(tour_autorotation_openatstartplugin GT 0,dec(tour_autorotation_openatstartplugin);set(ptplugin[floorPlanArea].autorotateBlocked,false);););
 		set(ptplugin[floorPlanArea].isOpen, false);
 		js(invokePluginFunction(floorPlanArea, hideKolorArea, %1));
-		);
 	</action>
 	
 	<events name="kolorAreaEvents_floorPlanArea" 
 		keep="true"
 		hidetourcontrols="if(loadedState_floorPlanArea,if(ptplugin[floorPlanArea].isOpen,set(restore_floorPlanArea, true);hideKolorArea_floorPlanArea(false);,set(restore_floorPlanArea, false);););"
 		showtourcontrols="if(tour_displayfloorplan,if(restore_floorPlanArea,showKolorArea_floorPlanArea(false);););set(loadedState_floorPlanArea, get(tour_displaycontrols));"
-		onremovedisplayedobject="ifnot(ptplugin[floorPlanArea].currentCall,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
-););"
 	/>
 	
 <!-- ********** -->
@@ -1212,8 +1196,6 @@ displayImage(%FIRSTXML%/graphics/button3/_1072108910901072107410821072.png
              ,true
              ,3c3c3c
              ,1);
-            mainloadscene(get(panoramagroup[panogroup11].mainscene));lookat(3.200000, -24.950000, 90.000000);
-
 
   </action>
 
@@ -1248,54 +1230,126 @@ displayImage(%FIRSTXML%/graphics/button3/_1072108910901072107410821072.png
 	edge="bottom"
 />
 
-<!-- ********** -->
-<!-- Loading Information -->
-<!-- id : loaderinfo -->
-<!-- ********** -->
+<action name="viewControlZoomIn">
+	if(%1,
+		if(%2,
+			if(%2 LT view.fovmin,
+				zoomto(get(view.fovmin));
+			,
+				if(%2 LT view.fov,
+					zoomto(%2);
+				);
+			);
+		,
+			set(fov_moveforce, -1);
+			delayedcall(0.1, viewControlZoomStop());
+		);
+	,
+		set(fov_moveforce, -1);
+	);
+</action>
+<action name="viewControlZoomOut">
+	if(%1,
+		if(%2,
+			if(%2 GT view.fovmax,
+				zoomto(get(view.fovmax));
+			,
+				if(%2 GT view.fov,
+					zoomto(%2);
+				);
+			);
+		,
+			set(fov_moveforce, +1);
+			delayedcall(0.1, viewControlZoomStop());
+		);
+	,
+		set(fov_moveforce, +1);
+	);
+</action>
+<action name="viewControlZoomStop">
+	set(fov_moveforce, 0);
+</action>
 
-  <events name="loaderinfoevent" onxmlcomplete="loaderinfoupdate();" keep="true"/>
+<action name="setViewNormal">
+	stopSetViewTweens();
+	if(current_view_isflat === true,
+		setViewNonFlat(VFOV);
+	);
+	setViewNormalComplete();
+</action>
 
-  <action name="loaderinfoupdate">
-    if(scene[get(xml.scene)].video,
-      set(layer[loaderinfotextfield].visible, false);
-    ,
-      if (progress.progress == 1,
-        delayedcall(0.5, set(layer[loaderinfotextfield].visible, false); );
-      ,
-        set(layer[loaderinfotextfield].visible, true);
-      );
-      mul(progresstext, get(progress.progress),100);
-      roundval(progresstext);
-      txtadd(progresstext, get(progresstext), %);
-      set(layer[loaderinfotextfield].html, get(progresstext));
-      ifnot(progress.progress GE 1, delayedcall(0.01, loaderinfoupdate() ));
-    );
-  </action>
+<action name="setViewNormalComplete">
+	set(view.fisheyefovlink, 0.5);
+	set(view.fovmax, get(panoview.fovmax));
+	tween(view.architectural, 0.0, distance(1.0, 0.45));
+	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
+	tween(view.vlookat, get(panoview.v), distance(90, 0.45));
+	tween(view.fov, get(panoview.fov), distance(50, 0.45));
+	tween(view.fisheye, 0.0, distance(1.0, 0.45),
+		set(view.stereographic,false);
+	);
+</action>
 
-  <layer name="loaderinfotextfield"
-         keep="true"
-         zorder="11"
-         url="%FIRSTXML%/graphics/textfield.swf"
-         align="bottomright"
-         x="0"
-         y="0"
-         borderwidth="0"
-         background="false"
-         autoheight="true"
-         autowidth="auto"
-         capture="false"
-         handcursor="false"
-         selectable="false"
-         alpha="1"
-         visible="true"
-         css="
-         text-align:right;
-         color:#c8c8c8;
-         font-family:Acrom;
-         font-weight:bold;
-         font-size:12px;
-         "
-  />
+<krpano normalViewActivated="true" />
+<action name="stopSetViewTweens">
+	stoptween(view.fov);
+	stoptween(view.vlookat);
+	stoptween(view.fisheye);
+	stoptween(view.architectural);
+	stoptween(view.pannini);
+</action>
+
+  <!-- Fullscreen Management -->
+  <action name="exitFullScreen" devices="fullscreensupport">set(tour_fullscreen,false);js(setFullscreen(false));</action>
+  <action name="enterFullScreen" devices="fullscreensupport">set(tour_fullscreen,true);js(setFullscreen(true));</action>
+  <action name="switchFullScreen">if(tour_fullscreen,exitFullScreen();,enterFullScreen(););</action>
+
+  
+  <events name="krpanoExitFullscreenEvent"
+    onexitfullscreen="if(tour_fullscreen,exitFullScreenChangeEvent(););"
+    keep="true" />
+
+  <action name="exitFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,false);events.dispatch(onexitfullscreen);</action>
+  <action name="enterFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,true);events.dispatch(onenterfullscreen);</action>
+  <action name="exitFullScreenFallback">set(fullscreen,false);</action>
+  <action name="enterFullScreenFallback">set(fullscreen,true);</action>
+  
+  <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
+
+<action name="setViewLittlePlanet">
+	set(sceneisfull360, false);
+	if(scene[get(xml.scene)].full360,
+		sub(viewhfov, panoview.hmax, panoview.hmin);
+		if (viewhfov == 360,
+			sub(viewvfov, panoview.vmax, panoview.vmin);
+			if (viewvfov == 180,
+				set(sceneisfull360, true);
+			);
+		);
+	);
+	if (sceneisfull360 AND (device.webgl OR device.flash),
+		if(normalViewActivated,stopSetViewTweens(););
+		if(current_view_isflat === true,
+			setViewNonFlat(VFOV);
+		);
+		setViewLittlePlanetComplete();
+	);
+</action>
+
+<action name="setViewLittlePlanetComplete">
+	set(backtonormalfirst,false);
+	if(view.pannini GE 1.0, set(backtonormalfirst,true));
+	if(view.stereographic == false, set(backtonormalfirst,true));
+	if(backtonormalfirst, hideTooltip();tween(view.fisheye, 0.0 ,distance(1.0, 0.25), easeOutQuad, WAIT); );
+	set(view.stereographic, true);
+	set(view.fisheyefovlink, 1.5);
+	tween(view.architectural, 0.0, 0.25);
+	tween(view.vlookat, 90, distance(179, 1.50));
+	tween(view.pannini, 0.0, distance(1.0, 0.75), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
+	if(panoview.fovmax LE 150, set(view.fovmax, 150); , set(view.fovmax, get(panoview.fovmax)); );
+	tween(view.fisheye, 1.0, distance(1.0, 0.75));
+	tween(view.fov, 150, distance(179, 0.75));
+</action>
 
   <!-- FLOORPLAN -->
   <action name="hideFloorplan">set(tour_displayfloorplan, false);events.dispatch(onhidetourfloorplan);</action>
@@ -1479,63 +1533,6 @@ displayImage(%FIRSTXML%/graphics/button3/_1072108910901072107410821072.png
   </action>
 
 
-<action name="setViewLittlePlanet">
-	set(sceneisfull360, false);
-	if(scene[get(xml.scene)].full360,
-		sub(viewhfov, panoview.hmax, panoview.hmin);
-		if (viewhfov == 360,
-			sub(viewvfov, panoview.vmax, panoview.vmin);
-			if (viewvfov == 180,
-				set(sceneisfull360, true);
-			);
-		);
-	);
-	if (sceneisfull360 AND (device.webgl OR device.flash),
-		if(normalViewActivated,stopSetViewTweens(););
-		if(current_view_isflat === true,
-			setViewNonFlat(VFOV);
-		);
-		setViewLittlePlanetComplete();
-	);
-</action>
-
-<action name="setViewLittlePlanetComplete">
-	set(backtonormalfirst,false);
-	if(view.pannini GE 1.0, set(backtonormalfirst,true));
-	if(view.stereographic == false, set(backtonormalfirst,true));
-	if(backtonormalfirst, hideTooltip();tween(view.fisheye, 0.0 ,distance(1.0, 0.25), easeOutQuad, WAIT); );
-	set(view.stereographic, true);
-	set(view.fisheyefovlink, 1.5);
-	tween(view.architectural, 0.0, 0.25);
-	tween(view.vlookat, 90, distance(179, 1.50));
-	tween(view.pannini, 0.0, distance(1.0, 0.75), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	if(panoview.fovmax LE 150, set(view.fovmax, 150); , set(view.fovmax, get(panoview.fovmax)); );
-	tween(view.fisheye, 1.0, distance(1.0, 0.75));
-	tween(view.fov, 150, distance(179, 0.75));
-</action>
-
-  <!-- Fullscreen Management -->
-  <action name="exitFullScreen" devices="fullscreensupport">set(tour_fullscreen,false);js(setFullscreen(false));</action>
-  <action name="enterFullScreen" devices="fullscreensupport">set(tour_fullscreen,true);js(setFullscreen(true));</action>
-  <action name="switchFullScreen">if(tour_fullscreen,exitFullScreen();,enterFullScreen(););</action>
-
-  
-  <events name="krpanoExitFullscreenEvent"
-    onexitfullscreen="if(tour_fullscreen,exitFullScreenChangeEvent(););"
-    keep="true" />
-
-  <action name="exitFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,false);events.dispatch(onexitfullscreen);</action>
-  <action name="enterFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,true);events.dispatch(onenterfullscreen);</action>
-  <action name="exitFullScreenFallback">set(fullscreen,false);</action>
-  <action name="enterFullScreenFallback">set(fullscreen,true);</action>
-  
-  <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
-
-  <!-- Hide / Show Controls -->
-  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
-  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
-
-
 <action name="setViewArchitectural">
 	if(normalViewActivated,stopSetViewTweens(););
 	if(current_view_isflat === true,
@@ -1556,73 +1553,9 @@ displayImage(%FIRSTXML%/graphics/button3/_1072108910901072107410821072.png
 	tween(view.fov, get(panoview.fov), distance(50, 0.45));
 </action>
 
-<action name="setViewNormal">
-	stopSetViewTweens();
-	if(current_view_isflat === true,
-		setViewNonFlat(VFOV);
-	);
-	setViewNormalComplete();
-</action>
+  <!-- Hide / Show Controls -->
+  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
+  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
 
-<action name="setViewNormalComplete">
-	set(view.fisheyefovlink, 0.5);
-	set(view.fovmax, get(panoview.fovmax));
-	tween(view.architectural, 0.0, distance(1.0, 0.45));
-	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	tween(view.vlookat, get(panoview.v), distance(90, 0.45));
-	tween(view.fov, get(panoview.fov), distance(50, 0.45));
-	tween(view.fisheye, 0.0, distance(1.0, 0.45),
-		set(view.stereographic,false);
-	);
-</action>
-
-<krpano normalViewActivated="true" />
-<action name="stopSetViewTweens">
-	stoptween(view.fov);
-	stoptween(view.vlookat);
-	stoptween(view.fisheye);
-	stoptween(view.architectural);
-	stoptween(view.pannini);
-</action>
-
-<action name="viewControlZoomIn">
-	if(%1,
-		if(%2,
-			if(%2 LT view.fovmin,
-				zoomto(get(view.fovmin));
-			,
-				if(%2 LT view.fov,
-					zoomto(%2);
-				);
-			);
-		,
-			set(fov_moveforce, -1);
-			delayedcall(0.1, viewControlZoomStop());
-		);
-	,
-		set(fov_moveforce, -1);
-	);
-</action>
-<action name="viewControlZoomOut">
-	if(%1,
-		if(%2,
-			if(%2 GT view.fovmax,
-				zoomto(get(view.fovmax));
-			,
-				if(%2 GT view.fov,
-					zoomto(%2);
-				);
-			);
-		,
-			set(fov_moveforce, +1);
-			delayedcall(0.1, viewControlZoomStop());
-		);
-	,
-		set(fov_moveforce, +1);
-	);
-</action>
-<action name="viewControlZoomStop">
-	set(fov_moveforce, 0);
-</action>
 
 </krpano>
